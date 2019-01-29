@@ -1,6 +1,19 @@
-# ruby-testing
+# README
+
 Dev Academy: Ruby Testing Fundamentals
 
+* Ruby version
+2.6.0
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
 
 # Resources
 ## 📚📖
