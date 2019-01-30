@@ -1,6 +1,6 @@
 <h1>Users#register</h1>
 
-<%= form_tag do %>
+<%= form_tag "/users/register" do %>
   <%= text_field_tag :email %>
   <%= submit_tag 'Register' %>
 <% end %>
