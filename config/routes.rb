@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/register'
+  resources 'users', only: :index
+  post 'users/register'
 end
