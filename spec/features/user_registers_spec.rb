@@ -6,8 +6,9 @@ RSpec.describe "User registers" do
 
     expect(page).to have_field("email")
     fill_in(:email, with: "email@email.com")
+
     click_button("Register")
+
     expect(ActionMailer::Base.deliveries.size).to eq(1)
   end
 end
-
