@@ -6,8 +6,8 @@ class UsersController < ApplicationController
 
     UserMailer.
       with(
-        email: params["email"]
-
+        email: params["email"],
+        offers: OfferService.new.fetch
       ).
       register.deliver_now
   end
