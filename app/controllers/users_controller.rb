@@ -3,6 +3,12 @@ class UsersController < ApplicationController
   end
 
   def register
-    UserMailer.with(email: params["email"]).register.deliver_now
+
+    UserMailer.
+      with(
+        email: params["email"]
+
+      ).
+      register.deliver_now
   end
 end
